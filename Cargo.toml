@@ -1,0 +1,12 @@
+[package]
+name = "visualizer-v3"
+version = "0.1.0"
+authors = ["Benjamin Bergman <benjamin.bergman@humanrights.ca>"]
+edition = "2018"
+
+[dependencies]
+sample = "0.10.0"
+hound = "3.4.0"
+find_folder = "0.3.0"
+itertools = "0.8.0"
+nannou = "0.9"
