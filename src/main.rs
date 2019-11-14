@@ -26,6 +26,8 @@ use vulkano::pipeline::viewport::Viewport;
 use vulkano::pipeline::GraphicsPipeline;
 use vulkano::sync::GpuFuture;
 
+use hound;
+
 fn main() {
     let instance =
         Instance::new(None, &InstanceExtensions::none(), None).expect("failed to create instance");
