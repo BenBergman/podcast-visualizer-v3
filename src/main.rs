@@ -1,3 +1,5 @@
+#![deny(rust_2018_idioms)]
+
 use itertools::Itertools;
 use sample::{signal, Signal};
 
