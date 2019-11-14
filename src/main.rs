@@ -208,7 +208,7 @@ fn process_audio_clip() {
     let assets = find_folder::Search::ParentsThenKids(5, 5)
         .for_folder("assets")
         .unwrap();
-    let reader = hound::WavReader::open(assets.join("clip.wav")).unwrap();
+    let reader = hound::WavReader::open(assets.join("matt_clip.wav")).unwrap();
     let spec = reader.spec();
     println!("{:?}", spec);
 
