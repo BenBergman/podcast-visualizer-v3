@@ -204,15 +204,15 @@ void main() {
 
 /*
 fn main() {
-    process_audio_clip();
+    process_audio_clip("matt_clip.wav");
 }
 
-fn process_audio_clip() {
+fn process_audio_clip(clip_name: &str) {
     // Find and load the wav.
     let assets = find_folder::Search::ParentsThenKids(5, 5)
         .for_folder("assets")
         .unwrap();
-    let reader = hound::WavReader::open(assets.join("matt_clip.wav")).unwrap();
+    let reader = hound::WavReader::open(assets.join(clip_name)).unwrap();
     let spec = reader.spec();
     println!("{:?}", spec);
 
